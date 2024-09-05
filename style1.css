@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+:root {
+    --lightblue:#3b4664;
+    --lightblue-very:#647299;
+    --darkblue-very:#181f32;
+    --darkblue:#252d44;
+    --lightred:#d13f30;
+    --white:#eae3db;
+    --w:#c9c8c7;
+    --black:#434a5b;
+    --font-family: "Mulish", sans-serif;
+    --bold:900;
+    --radius:6px;
+    --small:9px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightblue);
+    font-family: var(--font-family);
+    font-weight: var(--bold);
+    color: var(--white);
+}
+
+.calculator-container {
+    width:370px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.theme {
+    display:flex;
+    align-items:end;
+    gap: 20px;
+    font-size: var(--small);
+    font-weight: 700;
+}
+
+.theme-num div{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    padding:1px;
+    background-color: var(--lightred);
+  
+}
+
+.theme > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+button {
+    background-color: var(--white);
+    color: var(--black);
+    font-weight: var(--bold);
+    font-size: 20px;
+    border-radius: var(--radius);
+    border: transparent;
+    border-bottom: solid 3px var(--w);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.calc-buttons {
+    background-color: var(--darkblue);
+    border-radius:var(--radius) ;
+    height: 300px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 15px;
+}
+
+.calc-theme {
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+}
+
+.calc-result {
+    background-color: var(--darkblue-very);
+    border-radius:var(--radius);
+    height:70px;
+    border: transparent solid;
+
+}
+
+.theme-num {
+    width:50px;
+    height: 20px;
+    background-color: var(--darkblue);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow:
+}
+
+
+
+.theme > span {
+    text-transform:uppercase;
+}
+
+.reset-button,.delete-button {
+    background-color: var(--lightblue-very);
+    color:var(--white);
+    text-transform: uppercase;
+}
+
+.calculate-result {
+    background-color: var(--lightred);
+    color: var(--white);
+    grid-column:3/-1;
+}
+
+.reset-button {
+    grid-column: 1/3;
+}
+
+
+
+
+
+
+
