@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="style1.css">
+    <!--Choose the theme-->
+    <link rel="stylesheet" href="style-theme1.css">
+    <!--<link rel="stylesheet" href="style-theme2.css">-->
+    <!--<link rel="stylesheet" href="style-theme3.css">-->
 </head>
 <body>
     <div class="calculator-container">
@@ -15,17 +18,17 @@
                 <div>
                     <pre>1  2  3</pre>
                     <div class="theme-num">
-                    <div></div>
-                   </div>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
-        <input type="text" class="calc-result">
+        <input type="text" id="calc-screen">
         <div class="calc-buttons">
             <button>7</button>
             <button>8</button>
             <button>9</button>
-            <button class="delete-button">del</button>
+            <button class="delete">del</button>
             <button>4</button>
             <button>5</button>
             <button>6</button>
@@ -37,8 +40,8 @@
             <button>.</button>
             <button>0</button>
             <button>/</button>
-            <button>X</button>
-            <button class="reset-button">reset</button>
+            <button>x</button>
+            <button class="reset">reset</button>
             <button class="calculate-result">=</button>
         </div>
     </div>
