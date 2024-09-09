@@ -35,7 +35,7 @@
 }
 
 .calculate-result {
-    background-color: var(--orange);
+    background-color: var(--orange) !important;
     grid-column:3/-1;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .delete,.reset {
-    background-color: var(--greenish-blue);
+    background-color: var(--greenish-blue) !important;
 }
 
 .delete,.reset,.calculate-result {
@@ -119,7 +119,7 @@ body {
     background-color: var(--darkwhite);
 }
 
-button {
+.btn {
     background-color: var(--white);
     color: var(--black);
     font-weight: var(--bold);
@@ -128,11 +128,11 @@ button {
     box-shadow: 0px 2px 1px var(--black);
 }
 
-button,#calc-screen {
+.btn,#calc-screen {
     border: transparent;
 }
 
-button:hover,.theme-num span:hover {
+.btn:hover,.theme-num span:hover {
     cursor: pointer;
     background-color: rgb(144,144,142);
 }

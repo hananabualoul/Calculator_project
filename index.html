@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <!--Choose the theme-->
-    <link rel="stylesheet" href="style-theme1.css">
-    <!--<link rel="stylesheet" href="style-theme2.css">-->
-    <!--<link rel="stylesheet" href="style-theme3.css">-->
-</head>
-<body>
+    <link id="color-theme-link" 
+          rel="stylesheet" 
+          href="style-theme1.css" />
+  </head>
+  <body>
     <div class="calculator-container">
-        <div class="calc-theme">
-            <span class="title">calc</span>
-            <div class="theme">
-                <span>theme</span>
-                <div>
-                    <pre>1  2  3</pre>
-                    <div class="theme-num">
-                        <span></span>
-                    </div>
-                </div>
+      <div class="calc-theme">
+        <span class="title">calc</span>
+        <div class="theme">
+          <span>theme</span>
+          <div>
+            <pre>1  2  3</pre>
+            <div class="theme-num">
+              <span id="color-theme-toggle"></span>
             </div>
+          </div>
         </div>
-        <input type="text" id="calc-screen">
-        <div class="calc-buttons">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="delete">del</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button>+</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button>-</button>
-            <button>.</button>
-            <button>0</button>
-            <button>/</button>
-            <button>x</button>
-            <button class="reset">reset</button>
-            <button class="calculate-result">=</button>
-        </div>
+      </div>
+      <input type="text" id="calc-screen" disabled />
+      <div class="calc-buttons">
+        <button class="btn">7</button>
+        <button class="btn">8</button>
+        <button class="btn">9</button>
+        <button class="btn delete">del</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+        <button class="btn">6</button>
+        <button class="btn">+</button>
+        <button class="btn">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">-</button>
+        <button class="btn">.</button>
+        <button class="btn">0</button>
+        <button class="btn">/</button>
+        <button class="btn">*</button>
+        <button class="btn reset">reset</button>
+        <button class="btn calculate-result">=</button>
+      </div>
     </div>
-</body>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
