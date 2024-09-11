@@ -104,6 +104,7 @@
     font-size: 30px;
     text-align: right;
     border-radius:var(--radius);
+    box-shadow: 0px 2px 5px var(--silver);
     height:70px;
 }
 
@@ -119,7 +120,7 @@ body {
     background-color: var(--darkwhite);
 }
 
-.btn {
+button {  /*  .btn  احمد ضافها*/
     background-color: var(--white);
     color: var(--black);
     font-weight: var(--bold);
@@ -128,11 +129,11 @@ body {
     box-shadow: 0px 2px 1px var(--black);
 }
 
-.btn,#calc-screen {
+button,#calc-screen{ /*  .btn  احمد ضافها*/
     border: transparent;
 }
 
-.btn:hover,.theme-num span:hover {
+button:hover,.theme-num span:hover {
     cursor: pointer;
     background-color: rgb(144,144,142);
 }
